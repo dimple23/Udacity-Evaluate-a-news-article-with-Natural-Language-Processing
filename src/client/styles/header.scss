@@ -1,0 +1,20 @@
+header {
+    padding: 60px;
+    text-align: center;
+    //background: #1abc9c;
+    background-color:  rgb(23, 62, 192);
+    color: rgb(200, 198, 231);
+    font-size: 30px;
+}
+
+//phone
+@media only screen and (max-width: 715px) {
+}
+
+// tablet
+@media only screen and (max-width: 990px) {
+}
+
+// desktop
+@media only screen and (min-width: 901px) {
+}
