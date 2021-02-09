@@ -4,10 +4,10 @@ function handleSubmit(event) {
     // check what text was put into the form field
     let formText = document.getElementById('url').value
 
-    if(Client.checkForURL(formText)) {
-    console.log("::: Form Submitted :::")
+    if(Client.validURL(formText)) {
+        console.log("::: Form Submitted :::")
 
-    postData('http://localhost:3000/api', {url: formText})
+        postData('http://localhost:3000/article', {url: formText})
 
     .then(function(res) {
         document.getElementById('polarity').innerHTML = 'Polarity: '+polarityChecker(res.score_tag);
