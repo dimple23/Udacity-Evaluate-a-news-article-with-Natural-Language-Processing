@@ -19,7 +19,7 @@ function PostHandler(req, res, next) {
         application_key: process.env.APP_KEY
     });
     textapi.sentiment({
-      'url': req.body.text
+        'url': req.body.url
     }, function(error, response) {
         res.send(response)
     }); 
